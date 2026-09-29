@@ -1,0 +1,562 @@
+body {
+  background-color: #09090b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Cline x1='0' y1='10' x2='10' y2='0' stroke='rgba(255,255,255,0.03)' stroke-width='0.3'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+* {
+  user-select: none;
+}
+
+.DivPrincipal {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Header {
+  height: auto;
+  width: auto;
+  border: 1px solid #27272a;
+  background-color: #09090b;
+}
+.Header:hover {
+  border-color: #000000;
+}
+.Heade {
+  display: flex;
+  margin: 30px;
+  height: 170px;
+  width: 900px;
+}
+.Imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Infos {
+  margin-left: 40px;
+  line-height: 0.8;
+}
+.software {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.soft {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #a0a0a0;
+}
+.Nome {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+.Nome:hover {
+  transform: translateY(-1px);
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.25);
+}
+.Codigo {
+  font-weight: bold;
+  font-size: 35px;
+  color: #3f3f46;
+}
+.Sobre {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #a0a0a0;
+}
+.Email {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+}
+.email {
+  margin: 0px;
+  color: #a0a0a0;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.AreaLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  margin-left: 50px;
+  height: 150px;
+}
+
+.tabs {
+  width: 960px;
+}
+.tabs input {
+  display: none;
+}
+
+.botoes {
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+  margin-left: 18px;
+}
+.botoes label {
+  cursor: pointer;
+  color: #a1a1aa;
+  font-family: monospace;
+  font-size: 14px;
+  padding-bottom: 7px;
+  opacity: 60%;
+}
+
+.conteudo {
+  display: none;
+}
+
+#about:checked ~ .conteudos .about {
+  display: block;
+}
+#exp:checked ~ .conteudos .exp {
+  display: block;
+}
+#proj:checked ~ .conteudos .proj {
+  display: block;
+}
+#about:checked ~ .botoes label[for="about"],
+#exp:checked ~ .botoes label[for="exp"],
+#proj:checked ~ .botoes label[for="proj"] {
+  color: #52525b;
+  border-bottom: 3px solid #000;
+  opacity: 100%;
+}
+.botoes label:hover {
+  color: #ffffff;
+  opacity: 85%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0px 0;
+  opacity: 50%;
+  width: 100%;
+}
+
+.ho {
+  margin-bottom: 20px;
+}
+
+.abt {
+  border: 1px solid #27272a;
+  height: 100px;
+  width: 650px;
+  max-width: 100%;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.Askills {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills {
+  border: 1px solid #27272a;
+  padding: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  white-space: nowrap;
+}
+
+.inf {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.til {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.fac {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+.data {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: #e5e7eb3f;
+  letter-spacing: 1px;
+}
+
+.corr {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.abtP {
+  border: 1px solid #27272a;
+  height: 100px;
+  width: 225px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.fab {
+  font-size: 15px;
+}
+
+.sp {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.cor {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.Cc {
+  font-size: 30px;
+}
+.projt {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.Tit {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.pjct {
+  font-size: 30px;
+  margin: 1px;
+  margin-inline: 0px;
+}
+
+.Cpjt {
+  height: 165px;
+  width: 280px;
+  gap: 10px;
+}
+.Cpjt:hover .linkicon {
+  opacity: 1;
+}
+.linkicon {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  opacity: 0;
+}
+
+.foot {
+  display: flex;
+  align-items: flex-start;
+  width: 960px;
+}
+
+.txtPdtv {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+.Cpjt:hover h4 {
+  transform: translateY(-1px);
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.25);
+}
+.textP {
+  color: #a0a0a0;
+  font-size: 12px;
+  margin-top: 2px;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+.skls {
+  font-size: 8px;
+  text-align: center;
+}
+.linke {
+  display: flex;
+  align-items: center;
+}
+.hfin {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.cardsProjetos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* quebra para a linha de baixo quando faltar espaço */
+}
+
+/*Responsividade para Tela de Celular*/
+@media (max-width: 480px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .DivPrincipal {
+    width: 100%;
+    min-height: 100vh;
+    padding: 16px;
+    align-items: stretch;
+  }
+
+  .Header,
+  .tabs,
+  .foot {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Heade {
+    width: 100%;
+    height: auto;
+    margin: 18px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .Imagem {
+    width: 100%;
+  }
+
+  .Imagem img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .Infos {
+    margin-left: 0;
+    line-height: 1.35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .software,
+  .Email {
+    justify-content: center;
+  }
+
+  .Nome {
+    font-size: 24px;
+    line-height: 1.15;
+    margin: 4px 0 6px;
+    word-break: break-word;
+  }
+
+  .Codigo {
+    font-size: 22px;
+  }
+
+  .Sobre {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .AreaLinks {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .AreaLinks a img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .botoes {
+    margin: 20px 0 0;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .botoes label {
+    font-size: 13px;
+    padding-bottom: 6px;
+  }
+
+  .conteudos,
+  .conteudo {
+    width: 100%;
+  }
+
+  .corr {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .abt,
+  .abtP,
+  .Cpjt {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .abt,
+  .abtP {
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+
+  .Askills {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skills {
+    padding: 6px 8px;
+    font-size: 9px;
+    gap: 4px;
+  }
+
+  .til {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .fac {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .data {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .fab {
+    font-size: 13px;
+  }
+
+  .sp {
+    font-size: 11px;
+  }
+
+  .foot {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .foot .data {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .projt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .Cc {
+    font-size: 22px;
+  }
+
+  .pjct {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .Cpjt {
+    gap: 8px;
+  }
+
+  .linkicon {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+  }
+
+  .txtPdtv {
+    font-size: 14px;
+  }
+
+  .textP {
+    font-size: 11px;
+    margin-bottom: 18px;
+    line-height: 1.45;
+  }
+
+  .skls {
+    font-size: 8px;
+  }
+
+  .ho {
+    margin-bottom: 16px;
+  }
+
+  .hfin {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .email {
+    font-size: 10px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+}
