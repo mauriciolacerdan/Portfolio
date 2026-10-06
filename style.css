@@ -4,6 +4,7 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
 * {
   user-select: none;
 }
@@ -22,29 +23,35 @@ body {
   border: 1px solid #27272a;
   background-color: #09090b;
 }
+
 .Header:hover {
   border-color: #000000;
 }
+
 .Heade {
   display: flex;
   margin: 30px;
   height: 170px;
   width: 900px;
 }
+
 .Imagem {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .Infos {
   margin-left: 40px;
   line-height: 0.8;
 }
+
 .software {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .soft {
   font-family: "JetBrains Mono", monospace;
   font-weight: 500;
@@ -54,20 +61,24 @@ body {
   margin: 0;
   color: #a0a0a0;
 }
+
 .Nome {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
+
 .Nome:hover {
   transform: translateY(-1px);
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.25);
 }
+
 .Codigo {
   font-weight: bold;
   font-size: 35px;
   color: #3f3f46;
 }
+
 .Sobre {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
@@ -75,18 +86,21 @@ body {
   line-height: 1.4;
   color: #a0a0a0;
 }
+
 .Email {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 2px;
 }
+
 .email {
   margin: 0px;
   color: #a0a0a0;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
 }
+
 .AreaLinks {
   display: flex;
   align-items: center;
@@ -99,6 +113,7 @@ body {
 .tabs {
   width: 960px;
 }
+
 .tabs input {
   display: none;
 }
@@ -109,6 +124,7 @@ body {
   gap: 40px;
   margin-left: 18px;
 }
+
 .botoes label {
   cursor: pointer;
   color: #a1a1aa;
@@ -125,12 +141,15 @@ body {
 #about:checked ~ .conteudos .about {
   display: block;
 }
+
 #exp:checked ~ .conteudos .exp {
   display: block;
 }
+
 #proj:checked ~ .conteudos .proj {
   display: block;
 }
+
 #about:checked ~ .botoes label[for="about"],
 #exp:checked ~ .botoes label[for="exp"],
 #proj:checked ~ .botoes label[for="proj"] {
@@ -138,6 +157,7 @@ body {
   border-bottom: 3px solid #000;
   opacity: 100%;
 }
+
 .botoes label:hover {
   color: #ffffff;
   opacity: 85%;
@@ -156,9 +176,14 @@ hr {
   margin-bottom: 20px;
 }
 
+/* =========================
+   ABOUT
+========================= */
+
 .abt {
   border: 1px solid #27272a;
-  height: 100px;
+  min-height: 100px;
+  height: auto;
   width: 650px;
   max-width: 100%;
   padding: 18px;
@@ -246,34 +271,57 @@ hr {
   gap: 1px;
 }
 
+/* =========================
+   PROJECTS
+========================= */
+
 .Cc {
   font-size: 30px;
 }
+
 .projt {
   display: flex;
   gap: 15px;
   align-items: center;
   margin-bottom: 23px;
 }
+
 .Tit {
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
+
 .pjct {
   font-size: 30px;
   margin: 1px;
   margin-inline: 0px;
 }
 
-.Cpjt {
-  height: 165px;
-  width: 280px;
-  gap: 10px;
+.cardsProjetos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
+
+.Cpjt {
+  border: 1px solid #27272a;
+  width: 280px;
+  min-height: 165px;
+  height: auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
 .Cpjt:hover .linkicon {
   opacity: 1;
 }
+
 .linkicon {
   width: 18px;
   height: 18px;
@@ -281,10 +329,9 @@ hr {
   opacity: 0;
 }
 
-.foot {
+.linke {
   display: flex;
-  align-items: flex-start;
-  width: 960px;
+  align-items: center;
 }
 
 .txtPdtv {
@@ -295,36 +342,55 @@ hr {
   color: #ffffff;
   transition: 0.2s ease;
 }
+
 .Cpjt:hover h4 {
   transform: translateY(-1px);
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.25);
 }
+
 .textP {
+  display: block;
   color: #a0a0a0;
   font-size: 12px;
   margin-top: 2px;
-  letter-spacing: 0px;
   margin-bottom: 20px;
+  letter-spacing: 0;
+  line-height: 1.45;
+  overflow-wrap: break-word;
 }
-.skls {
-  font-size: 8px;
-  text-align: center;
-}
-.linke {
+
+.Cpjt .Askills {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
 }
+
+.Cpjt .skills {
+  font-size: 8px;
+  padding: 4px 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.foot {
+  display: flex;
+  align-items: flex-start;
+  width: 960px;
+}
+
 .hfin {
   margin-top: 18px;
   margin-bottom: 18px;
 }
-.cardsProjetos {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap; /* quebra para a linha de baixo quando faltar espaço */
-}
 
-/*Responsividade para Tela de Celular*/
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
 @media (max-width: 480px) {
   *,
   *::before,
@@ -439,23 +505,32 @@ hr {
     width: 100%;
   }
 
+  /* =========================
+     ABOUT - MOBILE
+  ========================= */
+
   .corr {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
 
-  .abt,
-  .abtP,
-  .Cpjt {
+  .abt {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 14px;
+    box-sizing: border-box;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+
+  .abtP {
     width: 100%;
     height: auto;
     min-height: auto;
     padding: 14px;
-  }
-
-  .abt,
-  .abtP {
+    box-sizing: border-box;
     gap: 14px;
     margin-bottom: 12px;
   }
@@ -470,6 +545,10 @@ hr {
     font-size: 9px;
     gap: 4px;
   }
+
+  /* =========================
+     TEXTOS - MOBILE
+  ========================= */
 
   .til {
     font-size: 15px;
@@ -494,6 +573,10 @@ hr {
     font-size: 11px;
   }
 
+  /* =========================
+     FOOTER - MOBILE
+  ========================= */
+
   .foot {
     justify-content: center;
     text-align: center;
@@ -504,6 +587,10 @@ hr {
     width: 100%;
     margin: 0;
   }
+
+  /* =========================
+     PROJECTS - MOBILE
+  ========================= */
 
   .projt {
     flex-direction: column;
@@ -521,8 +608,29 @@ hr {
     margin: 0;
   }
 
+  .cardsProjetos {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .Cpjt {
+    width: 100%;
+    min-height: 165px;
+    height: auto;
+    padding: 14px;
+    box-sizing: border-box;
     gap: 8px;
+    margin-bottom: 0;
+  }
+
+  .Cpjt .Askills {
+    gap: 8px;
+  }
+
+  .Cpjt .skills {
+    font-size: 8px;
+    padding: 4px 5px;
   }
 
   .linkicon {
@@ -536,6 +644,7 @@ hr {
   }
 
   .textP {
+    display: block;
     font-size: 11px;
     margin-bottom: 18px;
     line-height: 1.45;
@@ -560,3 +669,4 @@ hr {
     overflow-wrap: anywhere;
   }
 }
+
